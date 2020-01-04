@@ -6,10 +6,10 @@ if ($argc !== 5) {
   exit();
 }
 
-$account = (string)$argv[1];	//ddns
-$pwd = (string)$argv[2];		//password
-$hostname = (string)$argv[3];	//chriswald.com
-$ip = (string)$argv[4];			//127.0.0.1
+$account = (string)$argv[1];
+$pwd = (string)$argv[2];
+$hostname = (string)$argv[3];
+$ip = (string)$argv[4];
 
 // check the hostname contains '.'
 if (strpos($hostname, '.') === false) {
