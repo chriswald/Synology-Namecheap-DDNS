@@ -7,11 +7,11 @@ Setup
  1. Copy `namecheapddns.php` and `namecheapddns.sh` to `/sbin`
  2. Use `chmod` to make `namecheapddns.sh` executable
  3. Use `vi` to edit `/etc.defaults/ddns_provider.conf` and add the following text:
-```
-[Namecheap]
-    modulepath=/sbin/namecheapddns.sh
-    queryurl=https://dynamicdns.park-your-domain.com/
-```
+    ```
+    [Namecheap]
+        modulepath=/sbin/namecheapddns.sh
+        queryurl=https://dynamicdns.park-your-domain.com/
+    ```
  4. In DSM, open Control Panel > External Access > DDNS
  5. Click Add
  6. Choose Namecheap as the service provider
