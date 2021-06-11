@@ -2,6 +2,10 @@ Description
 ===========
 This repository contains the scripts and setupt instructions necessary to configure a Synology NAS to use Namecheap's own DDNS service to automatically update an A + Dynamic DDNS Record with the public IP address of the Synology server. It does not describe how to enable DDNS for a host within Namecheap.
 
+Note
+====
+This setup may periodically be wiped out (maybe on major upgrades?) and need to be reimplemented.
+
 Setup
 =====
  1. Copy `namecheapddns.php` and `namecheapddns.sh` to `/sbin`
