@@ -30,6 +30,7 @@ curl_setopt($req, CURLOPT_RETURNTRANSFER, true);
 $res = curl_exec($req);
 curl_close($req);
 
+$res = preg_replace('/(<\?xml[^?]+?)utf-16/i', '$1utf-8', $res);
 $xml = new SimpleXMLElement($res);
 if ($xml->ErrCount > 0) {
 	$error = $xml->errors[0]->Err1;
