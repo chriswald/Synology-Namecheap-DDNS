@@ -26,10 +26,13 @@ Manual Setup
         modulepath=/sbin/namecheapddns.sh
         queryurl=https://dynamicdns.park-your-domain.com/
     ```
- 4. In DSM, open Control Panel > External Access > DDNS
- 5. Click Add
- 6. Choose Namecheap as the service provider
- 7. In Hostname enter the domain name purchased from Namecheap (eg `example.com`)
- 8. In Username/Email enter the subdomain to dynamically update (eg `subdomain` to update `subdomain.example.com`). See Namecheap DDNS documentation for special values that can be entered here.
- 9. In Password/Key provide the Dynamic DNS Password provided by Namecheap when Dynamic DNS was enabled.
- 10. Test the connection. The status should come back Normal.
+
+Configure DDNS provider
+=======================
+ 1. In DSM, open Control Panel > External Access > DDNS
+ 2. Click Add
+ 3. Choose Namecheap as the service provider
+ 4. In Hostname enter the domain name purchased from Namecheap (eg `example.com`)
+ 5. In Username/Email enter the subdomain to dynamically update (eg `subdomain` to update `subdomain.example.com`). See Namecheap DDNS documentation for special values that can be entered here.
+ 6. In Password/Key provide the Dynamic DNS Password provided by Namecheap when Dynamic DNS was enabled.
+ 7. Test the connection. The status should come back Normal.
