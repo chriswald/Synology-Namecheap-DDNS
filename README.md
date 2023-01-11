@@ -6,8 +6,18 @@ Note
 ====
 This setup may periodically be wiped out (maybe on major upgrades?) and need to be reimplemented.
 
-Setup
-=====
+Automated Setup
+===============
+```
+wget https://gitlab.chriswald.com/chriswald/Synology-Namecheap-DDNS/-/archive/master/Synology-Namecheap-DDNS-master.tar.gz
+tar -xvf Synology-Namecheap-DDNS-master.tar.gz
+chmod +x Synology-Namecheap-DDNS-master/restoreddns.sh
+sudo Synology-Namecheap-DDNS-master/restoreddns.sh
+rm -rf Synology-Namecheap-DDNS-master Synology-Namecheap-DDNS-master.tar.gz 
+```
+
+Manual Setup
+============
  1. Copy `namecheapddns.php` and `namecheapddns.sh` to `/sbin`
  2. `sudo chmod +x /sbin/namecheapddns.sh`
  3. Use `vi` to edit `/etc.defaults/ddns_provider.conf` and add the following text:
