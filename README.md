@@ -9,7 +9,7 @@ This setup may periodically be wiped out (maybe on major upgrades?) and need to 
 Setup
 =====
  1. Copy `namecheapddns.php` and `namecheapddns.sh` to `/sbin`
- 2. Use `chmod` to make `namecheapddns.sh` executable
+ 2. `sudo chmod +x /sbin/namecheapddns.sh`
  3. Use `vi` to edit `/etc.defaults/ddns_provider.conf` and add the following text:
     ```
     [Namecheap]
